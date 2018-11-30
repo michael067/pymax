@@ -20,6 +20,7 @@ Room = collections.namedtuple('Room', ('room_id', 'name', 'rf_address', 'devices
 class Discovery(Debugger):
     DISCOVERY_TYPE_IDENTIFY = 'I'
     DISCOVERY_TYPE_NETWORK_CONFIG = 'N'
+    RESET = 'R'
 
     def discover(self, cube_serial=None, discovery_type=DISCOVERY_TYPE_IDENTIFY):
         send_socket = None
